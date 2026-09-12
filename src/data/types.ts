@@ -15,13 +15,6 @@ export interface RunRecord {
   survivalSeconds: number;
 }
 
-export interface HudSnapshot {
-  score: number;
-  lives: number;
-  wave: number;
-  kills: number;
-}
-
 export const DEFAULT_SETTINGS: GameSettings = {
   id: 'main',
   soundEnabled: true,
