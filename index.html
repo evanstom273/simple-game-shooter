@@ -1,51 +1,16 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="theme-color" content="#10131b">
-    <meta name="description" content="The home page for Simple Game Shooter.">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#090c13" />
+    <meta name="description" content="A quick arcade shooter. Play anywhere and keep your runs on this device." />
+    <link rel="icon" type="image/svg+xml" href="./icons/app-icon.svg" />
+    <link rel="apple-touch-icon" href="./icons/icon-192.png" />
     <title>Simple Game Shooter</title>
-    <style>
-      :root {
-        color-scheme: dark;
-        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-        background: #10131b;
-        color: #f1f4fa;
-      }
-      * { box-sizing: border-box; }
-      body {
-        min-height: 100vh;
-        margin: 0;
-        display: grid;
-        place-items: center;
-        padding: 2rem;
-        background: radial-gradient(ellipse at 50% 38%, #242d43 0, #10131b 65%);
-      }
-      main { width: min(100%, 42rem); text-align: center; }
-      .mark {
-        display: grid;
-        place-items: center;
-        width: 4rem;
-        height: 4rem;
-        margin: 0 auto 1.5rem;
-        border: 1px solid #394966;
-        border-radius: 1.25rem;
-        background: #1a2232;
-        color: #9dc7ff;
-        font-size: 1.75rem;
-      }
-      h1 { margin: 0; font-size: clamp(2.5rem, 8vw, 4.5rem); letter-spacing: -0.06em; }
-      p { margin: 1rem auto 0; max-width: 32rem; color: #aeb9ca; font-size: 1.1rem; line-height: 1.7; }
-      .status { display: inline-block; margin-top: 2rem; padding: 0.5rem 0.8rem; border: 1px solid #394966; border-radius: 999px; color: #c6d9f4; font-size: 0.9rem; }
-    </style>
   </head>
   <body>
-    <main>
-      <div class="mark" aria-hidden="true">SG</div>
-      <h1>Simple Game Shooter</h1>
-      <p>The project site is live. The game itself is still in development. Check back here for updates.</p>
-      <span class="status">More soon</span>
-    </main>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
